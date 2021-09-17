@@ -4,7 +4,8 @@ const useStyles = makeStyles((theme) => ({
   mainContainer: {
     display: "flex",
     width: "100vw",
-    height: "100vh",
+    minHeight: "100vh",
+    padding: "50px",
     boxSizing: "border-box",
   },
 

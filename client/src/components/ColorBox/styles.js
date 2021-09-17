@@ -5,12 +5,11 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     backgroundColor: "#6C63FF",
     width: "100vw",
-    height: "70vh",
   },
 
   loginContainer: {
     width: "40vw",
-    padding: "20px",
+    padding: "50px",
     margin: "auto",
   },
 
@@ -39,7 +38,6 @@ const useStyles = makeStyles((theme) => ({
   whiteContainer: {
     display: "flex",
     width: "100vw",
-    height: "70vh",
   },
 
   whiteTitle: {

@@ -2,7 +2,7 @@ import { Typography } from "@material-ui/core";
 import Login from "../Login/Login";
 import useStyles from "./styles";
 
-const ColorBox = ({ user, color }) => {
+const ColorBox = ({ user, color, register }) => {
   const classes = useStyles();
 
   let info;
@@ -19,7 +19,7 @@ const ColorBox = ({ user, color }) => {
 
   let firstDiv = (
     <div className={classes.loginContainer}>
-      <Login user={user} />
+      <Login user={user} register={register} />
     </div>
   );
   let secondDiv = (
@@ -48,11 +48,12 @@ const ColorBox = ({ user, color }) => {
 
   return (
     <div
-      data-aos="fade-up"
+      data-aos={register ? "zoom-in" : "fade-up"}
       data-aos-duration="2000"
       className={
         color === "blue" ? classes.blueContainer : classes.whiteContainer
       }
+      style={register ? { minHeight: "100vh" } : {}}
     >
       {firstDiv}
       {secondDiv}

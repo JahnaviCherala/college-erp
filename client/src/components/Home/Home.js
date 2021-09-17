@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer";
 
 const Home = () => {
   const classes = useStyles();
+
   return (
     <div>
       <div
@@ -30,9 +31,9 @@ const Home = () => {
         </div>
       </div>
 
-      <ColorBox user="Admin" color="blue" />
-      <ColorBox user="Teacher" color="white" />
-      <ColorBox user="Student" color="blue" />
+      <ColorBox user="Admin" color="blue" register={false} />
+      <ColorBox user="Teacher" color="white" register={false} />
+      <ColorBox user="Student" color="blue" register={false} />
 
       <Footer />
     </div>

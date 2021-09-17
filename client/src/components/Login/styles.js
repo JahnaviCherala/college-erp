@@ -19,7 +19,7 @@ const useStyles = makeStyles(() => ({
   },
 
   extraMargin: {
-    marginBottom: "10px",
+    marginBottom: "13px",
   },
 
   title: {
